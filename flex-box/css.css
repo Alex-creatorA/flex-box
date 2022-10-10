@@ -156,20 +156,16 @@ h6 {
 }
 
 .tours__list {
-  
   display: flex;
   justify-content: space-between;
-  
 }
 
 .tours__item {
-    min-height: 90px;
-    background: #ffffff;
-    border-radius: 0px 0px 5px 5px;
-   
-    width: calc(100% /3 - 19px);
-    
-  }
+  min-height: 90px;
+  background: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+  width: calc(100% / 3 - 19px);
+}
 
 .tours__item--picture {
   margin-left: 8px;
@@ -188,19 +184,17 @@ h6 {
 }
 
 .tours__days--meal {
-  padding-top: 2px;
+  /* padding-top: 2px;
   padding-left: 5px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: top; */
 }
 
 .tours__item--picture:last-child {
   margin-right: 0;
 }
 
-.tours__item--picture:last-child {
-  margin-right: 0;
-}
+
 
 .tours__content {
   padding: 33px 22px;
