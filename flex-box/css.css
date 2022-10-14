@@ -172,10 +172,12 @@ h6 {
 }
 
 .tours__item--picture {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
   margin-left: 8px;
-  width: 141px;
-  margin-right: 0px;
-  margin-bottom: 20px;
+   width: 122px; 
+  margin-bottom: 26px;
   color: #666666;
   align-items: center;
   font-size: 16px;
@@ -187,18 +189,36 @@ h6 {
   margin-bottom: 19px;
 }
 
+.tours__item--pic{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px; ;
+}
+
+.tours__item-pic{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.calendar__meal {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+}
+
 .tours__days--meal {
-  /* padding-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
   padding-left: 5px;
   display: inline-block;
-  vertical-align: top; */
+  vertical-align: top;
 }
 
 .tours__item--picture:last-child {
   margin-right: 0;
 }
-
-
 
 .tours__content {
   padding: 33px 22px;
@@ -220,3 +240,88 @@ h6 {
   background: white;
   color: #da0100;
 }
+
+.news__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.news {
+  margin-bottom: 55px;
+}
+
+.news__list {
+  width: 568px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 47px;
+}
+
+.news__item {
+  margin-right: 0px;
+}
+
+.news__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news__text--content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 30px;
+  min-height: 140px;
+}
+
+.news__item-data {
+  margin-bottom: 12px;
+}
+
+.news__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+.news__item-description {
+  font-size: 16px;
+}
+
+.news__it {
+  margin-right: 14px;
+}
+
+.news__imgg {
+  height: 395px;
+  width: 566px;
+}
+
+.news__itemm {
+  margin-left: 2px;
+}
+
+.news__text--contentt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 37px;
+  min-height: 140px;
+}
+
+.news__item-titlee {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: -13px;
+}
+
+
+
