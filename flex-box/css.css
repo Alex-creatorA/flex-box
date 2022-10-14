@@ -160,6 +160,10 @@ h6 {
   justify-content: space-between;
 }
 
+.tours__list-service {
+  margin-bottom: 45px;
+}
+
 .tours__item {
   min-height: 90px;
   background: #ffffff;
