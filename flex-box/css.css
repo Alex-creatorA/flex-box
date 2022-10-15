@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 body {
   background-color: #001821;
   color: #ffffff;
@@ -16,7 +21,7 @@ a {
   color: inherit;
 }
 p {
-  margin: 0 0;
+  margin-top: 0;
 }
 
 ul {
@@ -38,6 +43,18 @@ h6 {
 .container {
   margin: 0 auto;
   width: 1141px;
+}
+
+.wrapper__main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 1200px;
+}
+
+body,html {
+  height: 100%;
 }
 
 .header {
@@ -93,6 +110,8 @@ h6 {
   text-decoration: underline;
   color: rgba(152, 164, 168, 1);
   margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contacts__shadow:hover {
@@ -176,7 +195,7 @@ h6 {
   justify-content: space-between;
   margin-right: 10px;
   margin-left: 8px;
-   width: 122px; 
+  width: 122px;
   margin-bottom: 26px;
   color: #666666;
   align-items: center;
@@ -189,16 +208,15 @@ h6 {
   margin-bottom: 19px;
 }
 
-.tours__item--pic{
+.tours__item--pic {
   display: flex;
   justify-content: space-between;
-  margin-right: 5px; ;
+  margin-right: 5px;
 }
 
-.tours__item-pic{
+.tours__item-pic {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .calendar__meal {
@@ -252,16 +270,26 @@ h6 {
 }
 
 .news__list {
-  width: 568px;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 47px;
 }
 
+.single-news {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 .news__item {
+  margin-right: 2%;
+  width: 568px;
+  height: 394px;
+  position: relative;
+  flex: 1;
+}
+
+.news__item:last-child {
   margin-right: 0px;
 }
 
@@ -272,56 +300,265 @@ h6 {
   object-fit: cover;
 }
 
-.news__text--content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 25px 30px;
-  min-height: 140px;
-}
-
-.news__item-data {
+.single--news__date {
   margin-bottom: 12px;
 }
 
-.news__item-title {
+.single--news__title {
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: -10px;
 }
 
-.news__item-description {
+.single--news__desc {
   font-size: 16px;
 }
 
-.news__it {
-  margin-right: 14px;
-}
-
-.news__imgg {
-  height: 395px;
-  width: 566px;
-}
-
-.news__itemm {
-  margin-left: 2px;
-}
-
-.news__text--contentt {
+.single-news__text--content {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 14px 37px;
+  padding: 0px 30px;
   min-height: 140px;
 }
 
-.news__item-titlee {
-  font-weight: 700;
-  font-size: 24px;
-  margin-bottom: -13px;
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 149px;
+}
+
+.paginator-list,
+.paginator_display {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator_display {
+  margin-right: 36px;
+}
+
+.paginator__item {
+  text-align: center;
+}
+
+.paginator__item:hover {
+  background: #ffffff;
+  color: #f5170e;
+  border-radius: 40px;
+}
+
+.paginator__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+/* .about {
+  margin-bottom: 98px;
+  display: flex;
+}
+
+.about__img{
+
 }
 
 
+.about__team {
+  background: url(./img/mountains.png) no-repeat;
+  width-max: 785px;
+  height: 455px;
+  margin-top: -412px;
+  margin-left: 352px;
+  color: #060606;
+  position: absolute;
+  display: block;
+  border-radius: 5px;
+  padding: 70px 80px;
+}
 
+.about__team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 40px;
+  
+}
+
+.about__team--text {
+  font-size: 16px;
+  margin-bottom: 59px;
+  margin-right: 124px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.about__team--text p {
+  margin-bottom: 20px;
+}
+
+.about__team--text p:last-child {
+  margin-bottom: 0px;
+}
+
+.about__team-img {
+  display: block;
+  height: 455px;
+  width: 785px;
+  margin-left: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+  position: relative;
+} */
+
+.about:before,
+.about__team {
+  border-radius: 5px;
+}
+
+.about {
+  margin-bottom: 56px;
+  display: flex;
+}
+
+.about:before {
+  content: "";
+  display: block;
+  width: 490px;
+  height: 505px;
+  background: url(./img/gates.png) center center / cover no-repeat;
+}
+
+.about__team {
+  background: url(./img/mountains.png) no-repeat;
+  padding: 70px 80px;
+  width: 785px;
+  height: 455px;
+  margin-left: -140px;
+  margin-top: 96px;
+}
+
+.about__team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 37px;
+}
+
+.about__team--text {
+  font-size: 16px;
+  margin-bottom: 62px;
+  line-height: 27px;
+  width: 502px;
+}
+
+.about__team--text p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-conteiner {
+  border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer {
+  position: relative;
+  margin-top: px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.footer-conteiner{
+  margin-top: auto;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--alighn--right {
+  align-items: flex-end;
+}
+
+.contacts__description {
+  font-size: 11px;
+  color: #9a9a9a;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials {
+  margin-right: 70px;
+  top: 22px;
+  right: 260px;
+}
+
+.social__item--icon-tg {
+  background-image: url(./img/telegram.png);
+}
+
+.social__item--icon-tg:hover {
+  background-image: url(./img/t.png);
+}
+
+.social__item--icon-vk {
+  background-image: url(./img/vk.png);
+}
+
+.social__item--icon-vk:hover {
+  background-image: url(./img/vk\ 1.png);
+}
+
+.social__item--icon-fec {
+  background-image: url(./img/f.png);
+}
+
+.social__item--icon-fec:hover {
+  background-image: url(./img/f2.png);
+}
+
+.social__item--icon-insta {
+  background-image: url(./img/in.png);
+}
+
+.social__item--icon-insta:hove r {
+  background-image: url(./img/in\ 1.png);
+}
+
+.contacts__description {
+  display: flex;
+  justify-content: end;
+}
+
+.footer-conteiner__content {
+  margin-top: 29px;
+  position: relative;
+}
+
+.wrapper__main {
+  background: url(./img/1.png) center top no-repeat,
+    url(./img/2.png) right 30px bottom 160px no-repeat;
+  overflow: hidden;
+}
