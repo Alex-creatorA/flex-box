@@ -45,7 +45,7 @@ h6 {
   width: 1141px;
 }
 
-.wrapper__main{
+.wrapper__main {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -53,7 +53,8 @@ h6 {
   min-width: 1200px;
 }
 
-body,html {
+body,
+html {
   height: 100%;
 }
 
@@ -474,7 +475,7 @@ body,html {
   align-items: center;
 }
 
-.footer-conteiner{
+.footer-conteiner {
   margin-top: auto;
 }
 
@@ -562,3 +563,20 @@ body,html {
     url(./img/2.png) right 30px bottom 160px no-repeat;
   overflow: hidden;
 }
+
+/* services page */
+
+.top-line {
+  display: flex;
+  flex-direction: column;
+  min-height: 415px;
+  /* background: url(img/servic/headline\ 1.png) / center/no-repeat;
+ */
+}
+
+.container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
