@@ -8,8 +8,6 @@ img {
 }
 
 body {
-  background-color: #001821;
-  color: #ffffff;
   font-size: 14px;
   line-height: 1.42;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -58,7 +56,131 @@ html {
   height: 100%;
 }
 
-.header {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header {
   display: flex;
   padding-top: 5px;
   margin-bottom: 10px;
@@ -361,62 +483,7 @@ html {
   line-height: 32px;
 }
 
-/* .about {
-  margin-bottom: 98px;
-  display: flex;
-}
 
-.about__img{
-
-}
-
-
-.about__team {
-  background: url(./img/mountains.png) no-repeat;
-  width-max: 785px;
-  height: 455px;
-  margin-top: -412px;
-  margin-left: 352px;
-  color: #060606;
-  position: absolute;
-  display: block;
-  border-radius: 5px;
-  padding: 70px 80px;
-}
-
-.about__team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
-  margin-bottom: 40px;
-  
-}
-
-.about__team--text {
-  font-size: 16px;
-  margin-bottom: 59px;
-  margin-right: 124px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.about__team--text p {
-  margin-bottom: 20px;
-}
-
-.about__team--text p:last-child {
-  margin-bottom: 0px;
-}
-
-.about__team-img {
-  display: block;
-  height: 455px;
-  width: 785px;
-  margin-left: 10px;
-  margin-top: 10px;
-  object-fit: cover;
-  position: relative;
-} */
 
 .about:before,
 .about__team {
@@ -566,17 +633,17 @@ html {
 
 /* services page */
 
-.top-line {
+/* .top-line {
   display: flex;
   flex-direction: column;
-  min-height: 415px;
+  min-height: 415px; */
   /* background: url(img/servic/headline\ 1.png) / center/no-repeat;
  */
-}
 
-.container{
+
+/* .container{
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
+} */
+ 
